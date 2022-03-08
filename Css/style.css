@@ -1,0 +1,248 @@
+:root {
+    --white: #F6F2EE;
+    --black: #171A1C;
+    --green10: #54F70D;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #222222;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--green10);
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--white);
+}
+
+body {
+    background-color: var(--black);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+header {
+    padding: 0 16px;
+}
+
+nav details summary {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    margin-top: 20px;
+}
+
+header li {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+header a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+header li:hover,
+header a:hover {
+    color: var(--green10);
+}
+
+
+.wrapper {
+    width: 650px;
+    margin: auto;
+}
+
+.main-content {
+    max-width: 650px;
+    padding: 0 16px;
+}
+
+.section-content {
+    position: relative;
+}
+
+h1 {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 64px;
+    margin: 40px 0 16px;
+}
+
+h2 {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 28px;
+    margin: 16px 0 16px;
+}
+
+p {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 17px;
+    margin: 16px 0 40px;
+    line-height: 24px;
+}
+
+hr {
+    border: 1px solid var(--green10);
+    margin: 58px 0 40px;
+}
+
+.images {
+    width: 100%;
+}
+
+.iconos-images {
+    color: var(--white);
+}
+
+blockquote {
+    background-color: var(--green10);
+    margin: 58px 0 40px;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+blockquote p {
+    color: var(--blue);
+    display: block;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    line-height: 24px;
+}
+
+.autor {
+    margin-top: 24px;
+}
+
+.section-content h2 {
+    margin-top: 0;
+}
+
+pre {
+    margin: 58px 0 31px;
+    padding: 24px;
+    border-radius: 8px;
+
+    color: var(--green10);
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+}
+
+.image-css {
+    margin-bottom: 40px;
+}
+
+.section3 p {
+    margin-bottom: 24px;
+}
+
+.section3 ol,
+.section3 ul {
+    margin-bottom: 40px;
+}
+
+.section3 ol li,
+.section3 ul li {
+    margin-bottom: 16px;
+    color: var(--white);
+}
+
+.slider-container {
+    display: block;
+    overflow: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.video {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.link-direct-list {
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.link-direct {
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: white;
+    border-radius: 50%;
+}
+
+.form input {
+    display: block;
+    box-sizing: border-box;
+    background: var(--blue);
+    border: 1px solid var(--green10);
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 16px;
+    inline-size: 100%;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+}
+
+.form input[type="submit"] {
+    background: #157EFB;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.form input::-webkit-input-placeholder {
+    color: var(--green10)
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        position: sticky;
+        top: 0px;
+    }
+
+    .header-content {
+        position: relative;
+        top: 0px;
+        padding: 0;
+    }
+
+    header {
+        padding: 0;
+        position: absolute;
+        width: 250px;
+        top: 0px;
+        left: -232px;
+        z-index: 1;
+    }
+}
